@@ -1,5 +1,6 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import './css/typography.css'
 import "./fonts/fontAwesomeLibrary.js";
 import Layout from "./Layout.jsx";
 import {
