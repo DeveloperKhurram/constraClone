@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { logo } from "../images/index.js";
+import {NavbarMenu} from '../elements/index.js'
 
 const Header = () => {
   return (
@@ -60,15 +61,15 @@ const Header = () => {
           <ul className="flex flex-col gap-y-3 mobileL:flex-row mobileL:flex-wrap">
             <li className="detail">
               <p className="head">call us</p>
-              <a className="body">
-                <NavLink>(+9) 847-291-4353</NavLink>
-              </a>
+              
+                <NavLink className={`body`}>(+9) 847-291-4353</NavLink>
+              
             </li>
             <li className="detail">
               <p className="head">Email Us</p>
-              <a className="body">
-                <NavLink>office@Constra.com</NavLink>
-              </a>
+             
+                <NavLink className={`body`}>office@Constra.com</NavLink>
+              
             </li>
             <li className="detail">
               <p className="head">Global Certificate</p>
@@ -79,6 +80,9 @@ const Header = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="sticky">
+        <NavbarMenu/>
       </div>
     </header>
   );

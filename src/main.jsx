@@ -1,7 +1,8 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import './css/typography.css'
+import "./css/typography.css";
 import "./fonts/fontAwesomeLibrary.js";
+import { ThemeProvider } from "@material-tailwind/react";
 import Layout from "./Layout.jsx";
 import {
   createBrowserRouter,
@@ -20,5 +21,7 @@ const router = createBrowserRouter(
 );
 
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <ThemeProvider>
+    <RouterProvider router={router} />
+  </ThemeProvider>
 );
