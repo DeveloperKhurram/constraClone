@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { logo } from "../images/index.js";
-import {NavbarMenu} from '../elements/index.js'
+import { NavbarMenu } from "../elements/index.js";
 
 const Header = () => {
   return (
@@ -61,29 +61,31 @@ const Header = () => {
           <ul className="flex flex-col gap-y-3 mobileL:flex-row mobileL:flex-wrap">
             <li className="detail">
               <p className="head">call us</p>
-              
-                <NavLink className={`body`}>(+9) 847-291-4353</NavLink>
-              
+
+              <NavLink className={`body`}>(+9) 847-291-4353</NavLink>
             </li>
             <li className="detail">
               <p className="head">Email Us</p>
-             
-                <NavLink className={`body`}>office@Constra.com</NavLink>
-              
+
+              <NavLink className={`body`}>office@Constra.com</NavLink>
             </li>
             <li className="detail">
               <p className="head">Global Certificate</p>
               <a className="body">ISO 9001:2017</a>
             </li>
             <li className="detail">
-            <button className="btn-primary">Get A Quote</button>
+              <button className="btn-primary">Get A Quote</button>
             </li>
           </ul>
         </div>
       </div>
-      <div className="sticky bg-black">
-        <NavbarMenu/>
+      <div className="sticky bg-grayDark ">
+        <div className="container">
+          <NavbarMenu />
+        </div>
       </div>
+
+    
     </header>
   );
 };

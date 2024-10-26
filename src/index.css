@@ -6,6 +6,7 @@
 :root {
   --bg-gray: #ebebeb;
   --text-gray: var(--text-gray);
+  --yellow-color: #ffb600;
 }
 * {
   margin: 0;
@@ -16,6 +17,9 @@
 html {
   font-size: 62.5%;
   overflow: hidden !important;
+}
+a {
+  outline: none;
 }
 .container {
   margin: 0 auto;

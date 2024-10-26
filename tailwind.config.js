@@ -11,6 +11,8 @@ module.exports = withMT({
     extend: {
       colors: {
         grayLight: "#EBEBEB",
+        yellowDark: "#ffb600",
+        grayDark: "#23282D",
       },
       screens: {
         mobileS: "320px",
