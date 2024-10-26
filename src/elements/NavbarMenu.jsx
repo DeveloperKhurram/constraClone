@@ -144,6 +144,7 @@ function NavList() {
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4">Pages</ListItem>
       </Typography>
+
       <Typography
         as="a"
         href="#"
@@ -155,7 +156,9 @@ function NavList() {
           Account
         </ListItem>
       </Typography>
+
       <NavListMenu />
+      
       <Typography
         as="a"
         href="#"
@@ -182,23 +185,23 @@ function NavbarMenu() {
   return (
     <Navbar className="mx-auto max-w-screen-xl px-4 py-2">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <Typography
+        {/* <Typography
           as="a"
           href="#"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 lg:ml-2"
         >
           Material Tailwind
-        </Typography>
+        </Typography> */}
         <div className="hidden lg:block">
           <NavList />
         </div>
-        <div className="hidden gap-2 lg:flex">
+        {/* <div className="hidden gap-2 lg:flex">
           <Button size="sm">Get Started</Button>
           <Button variant="outlined" size="sm">
             Log In
           </Button>
-        </div>
+        </div> */}
         <IconButton
           variant="text"
           className="lg:hidden"
@@ -213,14 +216,14 @@ function NavbarMenu() {
       </div>
       <Collapse open={openNav}>
         <NavList />
-        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
+        {/* <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
           <Button size="sm" fullWidth>
             Get Started
           </Button>
           <Button variant="outlined" size="sm" fullWidth>
             Log In
           </Button>
-        </div>
+        </div> */}
       </Collapse>
     </Navbar>
   );

@@ -81,7 +81,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <div className="sticky">
+      <div className="sticky bg-black">
         <NavbarMenu/>
       </div>
     </header>
