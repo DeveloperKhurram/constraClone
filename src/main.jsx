@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import "./css/typography.css";
+import "./css/slickCarousel.css";
 import "./fonts/fontAwesomeLibrary.js";
 import { ThemeProvider } from "@material-tailwind/react";
 import Layout from "./Layout.jsx";

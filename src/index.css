@@ -5,7 +5,7 @@
 
 :root {
   --bg-gray: #ebebeb;
-  --text-gray: var(--text-gray);
+  /* --text-gray: var(--text-gray); */
   --yellow-color: #ffb600;
 }
 * {
@@ -16,7 +16,10 @@
 }
 html {
   font-size: 62.5%;
-  overflow: hidden !important;
+  /* overflow: hidden !important; */
+}
+body{
+  overflow-y: scroll;
 }
 a {
   outline: none;

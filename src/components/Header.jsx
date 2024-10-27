@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { logo } from "../images/index.js";
-import { NavbarMenu } from "../elements/index.js";
+// import { NavbarMenu } from "../elements/index.js";
 
 const Header = () => {
   return (
@@ -79,13 +79,11 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <div className="sticky bg-grayDark ">
+      {/* <div className="sticky top-0 bg-grayDark ">
         <div className="container">
           <NavbarMenu />
         </div>
-      </div>
-
-    
+      </div> */}
     </header>
   );
 };
